@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.nju.server.admin.dao.AdminMapper">
+    <insert id="insert" parameterType="com.nju.server.admin.entity.Admin">
+        insert into admin(adminId, adminPasswd) values (#{adminId}, #{adminPasswd} )
+    </insert>
+</mapper>
