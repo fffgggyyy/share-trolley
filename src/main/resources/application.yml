@@ -17,3 +17,14 @@ spring:
 mybatis:
   mapper-locations: classpath:com/nju/server/**/**.xml
   type-aliases-package: classpath:com.nju.server.**.entity
+
+logging:
+  config: classpath:logback.xml
+
+ok:
+  http:
+    connect-timeout : 30
+    read-timeout : 30
+    write-timeout : 30
+    max-idle-connections : 200
+    keep-alive-duration : 300
